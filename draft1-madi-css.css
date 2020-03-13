@@ -29,7 +29,7 @@ border: none;
 .header {
 display: flex;
 flex-direction: row;
-background: #2F4778;
+background-color: #2F4778;
 }
 
 .menu {

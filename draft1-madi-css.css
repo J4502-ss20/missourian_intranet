@@ -50,13 +50,13 @@ justify-content: right;
 .bottom {
 	display: flex;
 	background: #000000;
-	Justify-content: center;
-	Text-decoration: none;
+	justify-content: center;
+	text-decoration: none;
 }
 
 /* FOOTER FOR MOBILE */
 .footer {
 	display: flex;
-	Position: fixed;
-	Background: #4d75c4;
+	position: fixed;
+	background-color: #4d75c4;
 }

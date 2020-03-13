@@ -24,14 +24,19 @@ border: none;
 	font-weight: 700;
 }
 
-/* MENU FOR MOBILE */
+/* HEADER */
 
 .header {
   display: flex;
+	height: 200px;
   flex-direction: row;
   background-color: #2F4778;
 }
+.header-2 {
+	align-self: flex-end;
+}
 
+/* MENU FOR MOBILE */
 .menu {
 display: flex;
  	flex-direction: column;

@@ -36,7 +36,9 @@ border: none;
 	padding:0;
 	justify-content: space-between;
 }
+.header-1 {
 
+}
 .header-2 {
 	justify-content: flex-end;
 }
@@ -45,8 +47,28 @@ border: none;
 .menu {
 	display: flex;
  	flex-direction: column;
+	list-style-type: none;
+	height:200px;
+	margin-top:20px;
+	padding:0;
+	background-color: #4d75c4;
+	float:right;
 }
-
+.menu_items {
+	color:white;
+	background-color:#1B2945;
+	align-self: flex-end;
+	margin-bottom: 10px;
+}
+.menu_items a {
+	text-decoration: none;
+	color: white;
+	padding: 8px 16px;
+}
+.menu_items a:hover {
+	background-color:white;
+	color:#1B2945;
+}
 
 }
 

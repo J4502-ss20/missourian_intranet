@@ -41,8 +41,7 @@ border: none;
 	height: auto;
 }
 .header-1 {
-	width: 40em;
-	float: left;
+	width: 100%;
 	height:auto;
 }
 
@@ -97,7 +96,7 @@ border: none;
 
 /* quick access button */
 
-ul.bottom {
+ul .button {
 	display: flex;
 	flex-direction: column;
   justify-content: center;
@@ -131,7 +130,7 @@ div.footer {
 	background-color: #4d75c4;
 }
 
-.footer p{
-	text-decoration-color: white
+.footer p {
+	color: white;
 	text-align:left;
 }

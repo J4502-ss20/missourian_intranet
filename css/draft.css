@@ -109,9 +109,9 @@ ul .button {
 ul a:link, ul a:visited {
   background-color: white;
   color: black;
-	margin:10px;
+	/*margin:10px;*/
 	border: 3px solid black;
-  /*padding: 10px 25px;*/
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -126,9 +126,13 @@ ul a:hover, ul a:active {
 	display: flex;
 	flex-direction: column;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	text-decoration: none;
-	border: 3px solid black;
 }
+
+.important_links a{
+	Border: 3px black;
+	text-decoration: none
+}
+
 
 
 /* FOOTER FOR MOBILE */

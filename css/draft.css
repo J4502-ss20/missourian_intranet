@@ -111,7 +111,7 @@ ul a:link, ul a:visited {
   color: black;
 	margin:10px;
 	border: 3px solid black;
-  padding: 10px 25px;
+  /*padding: 10px 25px;*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -126,6 +126,8 @@ ul a:hover, ul a:active {
 	display: flex;
 	flex-direction: column;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	border: 3px solid black;
 }
 
 

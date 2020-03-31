@@ -43,7 +43,6 @@ border: none;
 .header-1 {
 	width: 40em;
 	float: left;
-	width: 100%;
 	height:auto;
 }
 
@@ -130,4 +129,9 @@ div.footer {
 	margin: 30px 0 0 0;
   padding: 10px;
 	background-color: #4d75c4;
+}
+
+.footer p{
+	text-decoration-color: white
+	text-align:left;
 }

@@ -7,11 +7,16 @@ html {
 body {
 	margin-left: -10px;
 	margin-top: -10px;
-	margin-right:0px;
+	margin-right:0;
+	margin-bottom: -20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	margin-left: 20px;
 }
 
 h2 {
@@ -57,7 +62,7 @@ a img {
 	height: auto;
 }
 .header a {
-	margin: 
+	margin:
 }
 .header-1 {
 	width: 100%;
@@ -204,18 +209,20 @@ a img {
   justify-content: center;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
+	margin:20px
 }
 
 .button a:link, .button a:visited {
   background: white;
   color: black;
 	padding: 8px 16px;
-	margin:10px;
+	margin: 10px;
 	border: 3px solid black;
 	width:90%;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+	flex-direction: column;
 }
 
 .button a:hover, .button a:active {

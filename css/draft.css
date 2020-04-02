@@ -10,7 +10,6 @@ body {
 	margin-right:0px;
 }
 
-}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -173,6 +172,19 @@ a img {
 	justify-content: center;
 	width: 65px;
 	padding:15px 12.5px;
+}
+
+.quick_links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+.quick_links a {
+	padding: 10px 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .button {

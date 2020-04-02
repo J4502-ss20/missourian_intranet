@@ -8,6 +8,7 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="css/draft.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 </head>
@@ -15,8 +16,8 @@
 <body>
 
 <div class="header">
-  <a href="index.html"><img class="header-1" src="img/white_missourian_logo.png" alt="Missourian logo"></img></a>
-  <div class="header-2">
+    <a href="index.html"><img class="header-1" src="img/white_missourian_logo.png" alt="Missourian logo"></img></a>
+    <div class="header-2">
       <img class="header-2_button" src="img/hamburger.png" alt="hamburger menu"></img>
       <div class="header-2_content">
           <!-- This will eventually be where the dropdown content goes. -->
@@ -30,6 +31,12 @@
 </div>
 
 <div class="dropdown_menu">
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
     <a href="Reporter.html">Reporter</a>
     <a href="Editor.html">Editor</a>
     <a href="Photo.html">Photo</a>

@@ -52,24 +52,25 @@ a img {
 	padding: 10px;
 	height: auto;
 }
+.header a {
+	margin: 
+}
 .header-1 {
 	width: 100%;
 	height:auto;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 
-.header-2 {
-	display: flex;
-	flex-direction: column;
-}
 .header-2_button {
 	display: flex;
-	width: 100px;
-	max-height: 100%;
+	width: 14%;
+	max-width: 200px;
 	height: auto;
 	float:right;
 	cursor: pointer;
-	margin-top: -8px;
-	top: 0.25em;
+	margin-top: 2px;
+	margin-left: 10px;
 }
 /* The container <div> - needed to position the dropdown content */
 
@@ -98,9 +99,12 @@ a img {
 }
 
 .dropdown_menu .search-container {
-  float: right;
-	margin-left: 150px;
-	margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-left: 100px;
+	margin-right: 1rem;
+	margin-bottom: 10px;
 }
 
 .dropdown_menu input[type=text] {
@@ -108,13 +112,14 @@ a img {
   margin-top: 8px;
   font-size: 14px;
   border: none;
+	margin-left: 10px;
+	width:106px;
 }
 
 .dropdown_menu .search-container button {
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
-  margin-right: 16px;
   background: #1B2945;
 	color: white;
   font-size: 17px;
@@ -154,8 +159,6 @@ a img {
 
 .links a {
 	text-decoration: none;
-	color: white;
-	background: #1B2945;
 }
 
 .important_links {
@@ -172,19 +175,23 @@ a img {
 	justify-content: center;
 	width: 65px;
 	padding:15px 12.5px;
+	color: white;
+	background: #1B2945;
 }
 
 .quick_links {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 10px;
+	background: #2F4778;
+	color: white;
 }
 
 .quick_links a {
 	padding: 10px 20px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	color: white;
 }
 
 .button {

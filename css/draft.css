@@ -68,8 +68,6 @@ a img {
 .header-2_button {
 	display: flex;
 	width: 14%;
-	max-width: 200px;
-	max-height: 50px;
 	height: auto;
 	float:right;
 	cursor: pointer;

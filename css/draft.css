@@ -57,7 +57,6 @@ a img {
 	height: auto;
 }
 .header a {
-	margin:
 }
 .header-1 {
 	width: 100%;
@@ -68,6 +67,7 @@ a img {
 .header-2_button {
 	display: flex;
 	width: 14%;
+	max-width: 200px;
 	height: auto;
 	float:right;
 	cursor: pointer;

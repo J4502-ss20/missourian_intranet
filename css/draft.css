@@ -69,6 +69,7 @@ a img {
 	display: flex;
 	width: 14%;
 	max-width: 200px;
+	max-height: 100px;
 	height: auto;
 	float:right;
 	cursor: pointer;
@@ -213,7 +214,7 @@ a img {
   text-decoration: none;
   display: flex;
 	flex-direction: column;
-	font-weight:bolder; 
+	font-weight:bolder;
 }
 .button a:hover, .button a:active {
   background: black;

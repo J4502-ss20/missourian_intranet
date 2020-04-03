@@ -69,7 +69,7 @@ a img {
 	display: flex;
 	width: 14%;
 	max-width: 200px;
-	max-height: 100px;
+	max-height: 50px;
 	height: auto;
 	float:right;
 	cursor: pointer;

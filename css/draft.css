@@ -213,6 +213,7 @@ a img {
   text-decoration: none;
   display: flex;
 	flex-direction: column;
+	font-weight:bolder; 
 }
 .button a:hover, .button a:active {
   background: black;

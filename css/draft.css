@@ -242,11 +242,14 @@ a img {
 .insidemenu {
 	display: flex;
 	flex-direction: column;
-	text-decoration: none;
 	margin-left: 20px;
-	border: 3pt black;
+	border: 3pt black solid;
 }
 
+.insidemenu a {
+	color: black;
+	text-decoration: none;
+}
 .videowrapper {
 	margin-left: 5%
 }

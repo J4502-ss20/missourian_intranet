@@ -227,10 +227,15 @@ a img {
 	flex-direction: column;
 	text-decoration: none;
 	margin-left: 20px;
+	border: 3pt black;
 }
 
 .videowrapper {
 	margin-left: 5%
+}
+
+.videowrapper iframe{
+	padding-bottom: 25px
 }
 
 .editor_pics {

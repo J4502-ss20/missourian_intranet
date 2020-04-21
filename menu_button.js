@@ -1,7 +1,7 @@
 //Loads when the javascript has loaded. when menu-trigger is clicked the function slide toggle occurs. THe 500 is the length of the animation.
 
 $(document).ready(function() {
-  $('.header-2_button').click(function() {
+  $('.menu_button').click(function() {
     $('.dropdown_menu').slideToggle(400);
   });//end slide toggle
 

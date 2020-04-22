@@ -11,7 +11,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 h1 {
-	margin-left: 20px;
+	margin: 0 0 0 20px;
+	color:#4d75c4;
+	font-size: 50px;
 }
 h2 {
 	margin-left: 20px;
@@ -90,8 +92,6 @@ a img {
 	margin-right: 0;
 	margin-top: 0;
 }
-
-
 
 .header a {
 	color: white;
@@ -300,10 +300,9 @@ nav .search-container button:hover {
 }
 
 /*for the general resources page*/
-.general_resources h2 {
-	margin-top: 90px;
+.general_resources {
+	margin-top: 110px;
 }
-
 .resourcesbutton {
 	display: flex;
 	flex-direction: column;
@@ -311,8 +310,7 @@ nav .search-container button:hover {
 	align-items: center;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	margin:10px;
-	margin-right: -10px;
+	margin:20px 20px 0 0;
 	float: none;
 }
 
@@ -328,6 +326,7 @@ nav .search-container button:hover {
   display: flex;
 	flex-direction: column;
 	font-weight:bolder;
+	box-sizing: border-box;
 }
 
 .resourcesbutton a:hover, .resourcesbutton a:active {

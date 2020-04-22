@@ -334,6 +334,23 @@ nav .search-container button:hover {
 	color: white;
 }
 
+.general_resources h2 {
+	margin: 20px 0 10px 0;
+}
+.general_resources p {
+	padding:5px;
+	margin: 0;
+}
+
+.general_resources a:link, .general_resources a:visited {
+	text-decoration: none;
+}
+
+.general_resources a:hover, .general_resources a:active {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
 /* FOOTER FOR MOBILE */
 .footer {
 	margin: 30px 0 0 0;

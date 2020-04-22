@@ -310,6 +310,7 @@ nav .search-container button:hover {
 	text-decoration: none;
 	margin:10px;
 	margin-right: -10px;
+	float: none;
 }
 
 .resourcesbutton a:link, .resourcesbutton a:visited {
@@ -335,6 +336,10 @@ nav .search-container button:hover {
 		.resourcesbutton {
 			display: flex;
 			flex-flow: row;
+			width: auto;
+			height: 50px;
+			margin-top: 90px;
+			float:left;
 		}
 }
 /* FOOTER FOR MOBILE */

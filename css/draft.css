@@ -58,9 +58,8 @@ a img {
 }
 
 .header_logo {
-	width: 15em;
-	margin-top: 0.75em;
-	margin-left: 0.75em;
+	max-width: 280px;
+	margin: 12px 0 0 12px;
 }
 
 .header_menu{
@@ -344,11 +343,10 @@ nav .search-container button:hover {
 .footer img {
 	width:70%;
 	max-width: 280px;
-	margin-left: 10px;
-	margin-top: 15px;
+	margin: 20px 0 0 20px;
 }
 .footer ul {
-	padding: 5px 0 15px 10px;
+	padding: 5px 0 15px 16px;
 	margin: 0;
 }
 .footer li {
@@ -359,10 +357,6 @@ nav .search-container button:hover {
 
 /* DESKTOP STYLING */
 @media screen and (min-width:600px){
-	.header{
-			flex-flow: row nowrap;
-		}
-
 	.header_logo{
 			width:280px;
 		}

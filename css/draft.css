@@ -52,6 +52,9 @@ a img {
 	background: #2F4778;
 	padding: 0 0;
 	height: auto;
+	position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header_logo {
@@ -176,9 +179,9 @@ nav .search-container button:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 30px;
 	margin-left: 20px;
 	margin-right: 5px;
+	margin-top: 90px;
 }
 .important_links a {
 	display: flex;
@@ -188,6 +191,11 @@ nav .search-container button:hover {
 	color: white;
 	background: #1B2945;
 }
+
+.important_links a:link, .button a:visited {
+
+}
+
 .quick_links {
 	display: flex;
 	flex-direction: column;
@@ -195,11 +203,35 @@ nav .search-container button:hover {
 	background: #2F4778;
 	color: white;
 }
-.quick_links a {
+
+.quick_links a{
+	background: #2F4778;
+	color: white;
+}
+
+/*quick_links*/
+
+.quick_links h2 {
+	text-decoration: underline;
+}
+
+.quick_links a:link, .quick_links a:visited {
 	padding: 10px 20px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+	flex-direction: column;
+	font-weight:bolder;
+	width: 100%;
+}
+
+.quick_links a:hover, .quick_links a:active {
+  background: #1B2945;
+  color: white;
+	text-decoration: underline;
 }
 
 .index_paragraph {
@@ -213,6 +245,9 @@ nav .search-container button:hover {
 #page_title {
 	margin-left: 0;
 }
+
+/*flex buttons with media query*/
+
 .button {
 	display: flex;
 	flex-direction: column;
@@ -223,6 +258,7 @@ nav .search-container button:hover {
 	margin:10px;
 	margin-right: -10px;
 }
+
 .button a:link, .button a:visited {
   background: white;
   color: black;
@@ -236,10 +272,23 @@ nav .search-container button:hover {
 	flex-direction: column;
 	font-weight:bolder;
 }
+
 .button a:hover, .button a:active {
   background: black;
   color: white;
 }
+
+@media screen and (min-width: 600px) {
+  .button {
+		display: flex;
+		flex-direction: row;
+	  justify-content: center;
+		align-items: center;
+  }
+}
+
+}
+
 /*inside page menus*/
 
 .insidemenu {
@@ -272,8 +321,7 @@ nav .search-container button:hover {
 	background: #4d75c4;
 }
 .footer img {
-	width:80%;
-	max-width: 800px;
+	width:280px;
 	margin-left: 10px;
 	margin-top: 10px;
 }

@@ -301,6 +301,10 @@ nav .search-container button:hover {
 }
 
 /*for the general resources page*/
+.general_resources h2 {
+	margin-top: 90px;
+}
+
 .resourcesbutton {
 	display: flex;
 	flex-direction: column;
@@ -338,14 +342,19 @@ nav .search-container button:hover {
 	background: #4d75c4;
 }
 .footer img {
-	width:80%;
-	max-width: 800px;
+	width:70%;
+	max-width: 280px;
 	margin-left: 10px;
-	margin-top: 10px;
+	margin-top: 15px;
 }
-.footer p {
+.footer ul {
+	padding: 5px 0 15px 10px;
+	margin: 0;
+}
+.footer li {
 	color: white;
 	text-align:left;
+	padding: 5px;
 }
 
 /* DESKTOP STYLING */
@@ -355,7 +364,7 @@ nav .search-container button:hover {
 		}
 
 	.header_logo{
-			width:18em;
+			width:280px;
 		}
 
 	nav {
@@ -401,11 +410,8 @@ nav .search-container button:hover {
 	}
 
 	.resourcesbutton {
-		display: flex;
-		flex-flow: row;
-		margin:auto;
-		width: 50px;
-		height: 50px;
+		flex-flow: column;
+		height: 10%;
 		float:left;
 	}
 }

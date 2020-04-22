@@ -243,6 +243,7 @@ nav .search-container button:hover {
 #page_title {
 	margin-left: 0;
 }
+
 .button {
 	display: flex;
 	flex-direction: column;
@@ -253,6 +254,7 @@ nav .search-container button:hover {
 	margin:10px;
 	margin-right: -10px;
 }
+
 .button a:link, .button a:visited {
   background: white;
   color: black;
@@ -266,6 +268,7 @@ nav .search-container button:hover {
 	flex-direction: column;
 	font-weight:bolder;
 }
+
 .button a:hover, .button a:active {
   background: black;
   color: white;
@@ -295,6 +298,44 @@ nav .search-container button:hover {
 .editor_pics {
 	margin-left: 20px;
 	margin-bottom: 50px;
+}
+
+/*for the general resources page*/
+.resourcesbutton {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	margin:10px;
+	margin-right: -10px;
+}
+
+.resourcesbutton a:link, .resourcesbutton a:visited {
+	background: white;
+  color: black;
+	padding: 8px 16px;
+	margin: 10px;
+	border: 3px solid black;
+	width:70%;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+	flex-direction: column;
+	font-weight:bolder;
+}
+
+.resourcesbutton a:hover, .resourcesbutton a:active {
+	background-color:black;
+	color: white;
+}
+
+@media screen and (min-width:600px) {
+		.resourcesbutton {
+			display: flex;
+			flex-flow: row;
+		}
 }
 /* FOOTER FOR MOBILE */
 .footer {
@@ -350,13 +391,6 @@ nav .search-container button:hover {
 	.search-container{
 		order:3;
 	}
-
-	.button {
-		display: flex;
-		flex-direction: row;
-	  justify-content: center;
-		align-items: center;
-  }
 
 	.footer img {
 		width:280px;

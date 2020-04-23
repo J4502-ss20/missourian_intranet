@@ -285,6 +285,10 @@ nav .search-container button:hover {
   background: black;
   color: white;
 }
+
+.twitter {
+	padding-left: 20px;
+}
 /*inside page menus*/
 
 .insidemenu {
@@ -536,15 +540,20 @@ nav .search-container button:hover {
 		float:left;
 	}
 
+	.insidemeu{
+		padding-right: none;
+	}
 	.gridmenu {grid-area: a;}
 	.gridcontent {grid-area: b;}
-
+	.twitter {grid-area: c;}
 		.grid {
 			display: grid;
+			grid-column-gap: 10px;
+			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-areas:
-					"a b b"
-					"a b b"
-					". b b"
+					"a b b "
+					"a b b "
+					"c b b "
 		}
 }
 

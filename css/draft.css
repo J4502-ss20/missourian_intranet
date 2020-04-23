@@ -546,9 +546,9 @@ nav .search-container button:hover {
 	.gridmenu {grid-area: a;}
 	.gridcontent {grid-area: b;}
 	.twitter {grid-area: c;}
-		.grid {
+	.grid {
 			display: grid;
-			grid-column-gap: 10px;
+			grid-gap: 10px;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-areas:
 					"a b b "

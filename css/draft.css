@@ -294,6 +294,14 @@ nav .search-container button:hover {
 	padding-bottom: 25px
 }
 
+.editor_grid {
+	margin: 0 -10px;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template: repeat(7, 1fr) / repeat(auto-fill, minmax(300px, 1fr));
+	gap: 10px;
+
 .editor_pics {
 	margin-left: 20px;
 	margin-bottom: 50px;

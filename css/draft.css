@@ -49,7 +49,7 @@ a img {
 
 .header {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow:row wrap;
 	justify-content: space-between;
 	background: #2F4778;
 	padding: 0 0;
@@ -60,7 +60,7 @@ a img {
 }
 
 .header_logo {
-	max-width: 280px;
+	max-width: 240px;
 	margin: 12px 0 0 12px;
 }
 
@@ -76,7 +76,7 @@ a img {
 	padding:0;
 }
 
-.menu_button {
+.menu_button_mobile {
 	margin-top:0;
 	padding: 0;
 	font-size: 2.2em;
@@ -105,12 +105,22 @@ a img {
 .desktop_nav{
 	display: none;
 }
-/* The container <div> - needed to position the dropdown content */
 
-/* Dropdown Content */
-.header nav {
+.roles_nav{
 	display: none;
+}
+
+.desktop_nav_item{
+	display: none;
+}
+
+.menu_button_desktop{
+	display: none;
+}
+
+nav {
 	display: flex;
+	display: none;
 	flex-flow: column;
   background: #4d75c4;
 	color:white;
@@ -167,7 +177,9 @@ nav .search-container button:hover {
   background: white;
 	color: #1B2945;
 }
+/* END OF HEADER STYLING */
 
+/* PAGE SPECIFIC STYLING */
 .editor_menu {
 	margin-top: 5em;
 }
@@ -209,6 +221,7 @@ nav .search-container button:hover {
 	align-items: center;
 	background: #2F4778;
 	color: white;
+	width:100%;
 }
 .quick_links a{
 	background: #2F4778;
@@ -217,6 +230,7 @@ nav .search-container button:hover {
 	margin-bottom: 5px;
 	color: white;
 	text-decoration: none;
+	width:100%;
 }
 
 
@@ -230,7 +244,6 @@ nav .search-container button:hover {
   display: flex;
 	flex-direction: column;
 	font-weight:bolder;
-	width: 100%;
 }
 
 .quick_links a:hover, .quick_links a:active {
@@ -301,6 +314,7 @@ nav .search-container button:hover {
 	display: grid;
 	grid-template: repeat(7, 1fr) / repeat(auto-fill, minmax(300px, 1fr));
 	gap: 10px;
+}
 
 .editor_pics {
 	margin-left: 20px;
@@ -383,42 +397,127 @@ nav .search-container button:hover {
 
 /* DESKTOP STYLING */
 @media screen and (min-width:600px){
+
+	.header{
+		/* not sure if we want the header to be static or fixed on desktop?? */
+		/* position: static; */
+		flex-flow:row;
+		justify-content: flex-start;
+	}
+
 	.header_logo{
-			width:280px;
+			max-width:500px;
+			min-width:100px;
+			margin: 12px;
+		}
+
+	.desktop_nav{
+		display: flex;
+		flex-flow:row nowrap;
+	}
+
+	.desktop_nav a{
+		align-items: center;
+	}
+
+	.desktop_nav a:hover, .desktop_nav a:active {
+	  background: #1B2945;
+	}
+
+	.desktop_nav_div{
+		position: relative;
+		display: inline-block;
+	}
+	.menu_button_desktop{
+	}
+
+	.roles_nav{
+		display: none;
+ 		position: absolute;
+	  background: #4d75c4;
+		color:white;
+	  width:100%;
+		margin: 0;
+		text-decoration: none;
+		font-size: 14px;
+		border-left: 2px solid white;
+		border-right: 2px solid white;
+	}
+
+	.roles_nav a{
+		display: flex;
+		justify-content: center;
+		width:100%;
+		margin: 0;
+		padding: 10px 0;
+		border-bottom: 1px solid white;
+	}
+	.roles_nav a:hover, .roles_nav a:active {
+		background: #1B2945
+	}
+
+	.desktop_nav_div:hover .roles_nav{
+		display: flex;
+		flex-flow: column;
+	}
+	.desktop_nav_item{
+		display: flex;
+		padding: 0 15px;
+		margin: 0 0;
+		height:100%;
+		text-align: center;
+		border-left: 1.5px solid white;
+	}
+
+	.desktop_nav_item:last-child{
+		border-right: 1.5px solid white;
+		margin-right: 3px;
+	}
+	.header_menu{
+			display: none;
 		}
 
 	nav {
 		display: flex;
 		flex-flow: row;
 		background: #2F4778;
-		width:50%;
-	}
-
-	.dropdown_menu{
+		width: auto;
 		padding:0;
+		margin: 5px 10px;
+		margin-bottom: 10px;
 	}
 
 	.dropdown_items {
 		display: flex;
 		flex-flow:row;
-		white-space: nowrap;
-		border-left: none;
-		margin:0;
-		padding: 0;
-	}
-
-	.header_menu{
-		display: none;
-	}
-
-	.header nav a{
-		background: #2F4778;
+		justify-content: flex-end;
 		margin:0;
 		padding:0;
+		white-space: nowrap;
+		border-left: none;
 	}
 
-	.search-container{
-		order:3;
+	nav a{
+		display: none;
+		background: #2F4778;
+		margin:0;
+		padding:10px 10px;
+	}
+
+	nav .search-container{
+		padding:0;
+		align-items: center;
+	}
+
+	nav input[type=text]{
+		width: 12vw;
+		max-width: none;
+		margin-right:0;
+	}
+
+	nav .search-container button{
+		float:none;
+		margin-right: 0;
 	}
 
 	.footer img {
@@ -433,5 +532,32 @@ nav .search-container button:hover {
 		flex-flow: column;
 		height: 10%;
 		float:left;
+	}
+}
+
+@media screen and (min-width:1024px){
+
+	.desktop_nav_item{
+		font-size:20px;
+	}
+
+	nav input[type=text]{
+		width: 15vw;
+	}
+}
+
+@media screen and (min-width:1440px){
+
+	.header{
+		justify-content: space-between;
+	}
+
+	.desktop_nav a{
+		font-size: 25px;
+		padding: 0 50px;
+	}
+
+	.roles_nav a{
+		padding: 10px 0;
 	}
 }

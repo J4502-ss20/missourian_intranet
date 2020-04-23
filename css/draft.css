@@ -189,7 +189,8 @@ nav .search-container button:hover {
 	flex-direction: row;
 	justify-content: space-around;
 	margin: 0 5px;
-	margin-top: 20vh;
+	margin-top: 35px;
+	margin-bottom: 20px;
 }
 .important_links a {
 	display: flex;
@@ -205,7 +206,11 @@ nav .search-container button:hover {
 
 }
 
-.index_paragraph {
+.twitterindex {
+	display: none;
+}
+
+/*.index_paragraph {
 	margin:20px;
 	margin-bottom: 30px;
 }
@@ -213,7 +218,7 @@ nav .search-container button:hover {
 	color:#4d75c4;
 	font-size: 50px;
 	margin-bottom: 0;
-}
+}*/
 
 .quick_links {
 	display: flex;
@@ -289,15 +294,19 @@ nav .search-container button:hover {
 .twitter {
 	padding-left: 20px;
 }
+
+.desktophomemenu {
+	display: none;
+}
 /*inside page menus*/
 
 .insidemenu {
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
-	margin-right: 50%;
+	width: 275px;
 	padding: 10px;
-	border: 3pt black solid;
+	border: 1pt black solid;
 }
 
 .insidemenu a {
@@ -540,21 +549,73 @@ nav .search-container button:hover {
 		float:left;
 	}
 
-	.insidemeu{
-		padding-right: none;
-	}
 	.gridmenu {grid-area: a;}
 	.gridcontent {grid-area: b;}
 	.twitter {grid-area: c;}
-	.grid {
+		.grid {
 			display: grid;
-			grid-gap: 10px;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 10px;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-areas:
-					"a b b "
-					"a b b "
-					"c b b "
+					"a b b b"
+					"a b b b"
+					"c b b b"
 		}
+
+		.important_links {
+			display: none;
+		}
+
+		.quick_links {
+			display: none;
+		}
+
+		.desktophomemenu {
+			display: flex;
+			flex-direction: column;
+			border: 1pt black solid;
+			width: 200px;
+			margin-left: 20px;
+			padding: 10px;
+			padding-top: 0px;
+		}
+
+		.desktophomemenu a{
+			text-decoration: underline;
+			color: black;
+		}
+
+		.twitterindex {
+			display: block;
+		}
+
+		.quickhome {
+			padding-top: 0px;
+		}
+
+		/*.index_paragraph p{
+			font-size: 1.5rem ;
+		}*/
+
+
+		.desktophomemenu {grid-area: d;}
+		.index_paragraph {grid-area: e;}
+		.quickhome {grid-area: f;}
+		.twitterindex {grid-area: g;}
+
+		.gridhome {
+			/*padding-top: 100px;*/
+			display: grid;
+			grid-column-gap: 0px;
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-areas:
+				"d e g"
+				". e g"
+				". e .";
+			align-content: flex-start;
+		}
+
+
 }
 
 @media screen and (min-width:1024px){

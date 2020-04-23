@@ -299,7 +299,7 @@ nav .search-container button:hover {
 	padding: 0;
 	list-style: none;
 	display: grid;
-	grid-template: repeat(7, 1fr) / repeat(auto-fill, minmax(300px, 1fr));
+	grid-template: repeat(auto-fill, minmax(200px, 1fr)) / repeat(auto-fill, minmax(300px, 1fr));
 	gap: 10px;
 
 .editor_pics {

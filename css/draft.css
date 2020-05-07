@@ -344,9 +344,6 @@ nav .search-container button:hover {
 }
 
 /*general_resources*/
-.general_resources {
-	margin-top: 110px;
-}
 
 .resourcesbutton {
 	display: flex;
@@ -356,7 +353,6 @@ nav .search-container button:hover {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	margin:10px 10px 0 20px;
-	float: none;
 }
 
 .resourcesbutton a:link, .resourcesbutton a:visited {
@@ -626,26 +622,7 @@ nav .search-container button:hover {
 				"d g .";
 		}
 
-		/*for the general resources page*/
-		.resourcesbutton {
-			grid-area: x;
-			position: fixed;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
 
-		.list {
-			grid-area:y;
-		}
-
-		.gridresources {
-			display: grid;
-			grid-template-columns: 1fr 2fr;
-			grid-template-areas:
-				"x y";
-		}
 
 @media screen and (min-width:1024px){
 

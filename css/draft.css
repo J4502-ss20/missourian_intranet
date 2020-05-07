@@ -16,10 +16,10 @@ h1 {
 	font-size: 50px;
 }
 h2 {
-	margin-left: 20px;
+	margin-left: 0px;
 }
 h3 {
-	margin-left: 25px;
+	margin-left: 15px;
 }
 
 p {
@@ -294,15 +294,17 @@ nav .search-container button:hover {
 .insidemenu {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
+	margin-left: 10px;
 	width: 275px;
-	padding: 10px;
-	border: 1pt black solid;
+	padding: 0px;
 }
 
 .insidemenu a {
-	color: black;
-	text-decoration: underline;
+	color: white;
+	text-decoration: none;
+	background-color: #4d75c4;
+	padding: 10px;
+	border: 6px solid white;
 }
 
 .videowrapper {
@@ -407,11 +409,12 @@ nav .search-container button:hover {
 		margin-bottom: 40px;
 	}
 	h2{
-		margin-left: 22px;
+		margin-left: 15px;
 	}
 	.header{
 		flex-flow:row;
 		justify-content: flex-start;
+		z-index: 2;
 	}
 
 	.header_logo{
@@ -543,18 +546,21 @@ nav .search-container button:hover {
 		float:left;
 	}
 
-	.gridmenu {grid-area: a;}
+	.gridmenu {grid-area: a;
+		position: sticky;
+		top: 80px;}
 	.gridcontent {grid-area: b;}
-	.social_media_timeline {grid-area: c;}
+	.social_media_timeline {grid-area: c;
+		margin-right: 20px;}
 
 	.grid {
 			display: grid;
 			grid-column-gap: 10px;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-areas:
-					"a b b b"
-					"a b b b"
-					"c b b b"
+					"a b b c"
+					"a b b ."
+					". b b ."
 		}
 
 		.important_links {
@@ -568,16 +574,18 @@ nav .search-container button:hover {
 		.desktophomemenu {
 			display: flex;
 			flex-direction: column;
-			border: 1pt black solid;
 			width: 200px;
-			margin-left: 20px;
+			margin-left: 0px;
 			padding: 10px;
 			padding-top: 0px;
 		}
 
 		.desktophomemenu a{
-			text-decoration: underline;
-			color: black;
+			color: white;
+			text-decoration: none;
+			background-color: #4d75c4;
+			padding: 10px;
+			border: 6px solid white;
 		}
 
 		.twitterindex {
@@ -602,11 +610,11 @@ nav .search-container button:hover {
 
 		.gridhome {
 			display: grid;
-			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-columns: 1fr 1fr 2fr;
 			grid-template-areas:
-				". . g"
-				"d e g"
-				". . g" ;
+				". g ."
+				"d g e"
+				". g ." ;
 		}
 
 

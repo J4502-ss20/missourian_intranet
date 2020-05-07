@@ -289,6 +289,10 @@ nav .search-container button:hover {
 .desktophomemenu {
 	display: none;
 }
+
+.homebasicinfo {
+	display: none;
+}
 /*inside page menus*/
 
 .insidemenu {
@@ -537,7 +541,7 @@ nav .search-container button:hover {
 	}
 
 	.button {
-		flex-flow: row
+		display: none;
 	}
 
 	.resourcesbutton {
@@ -604,17 +608,19 @@ nav .search-container button:hover {
 		.desktophomemenu {grid-area: d;}
 		.index_paragraph {
 			grid-area: e;
+			width: 600px;
 		}
 		.quickhome {grid-area: f;}
 		.twitterindex {grid-area: g;}
-
+		.homebasicinfo {grid-area: h;
+			display: block;
+			margin: 0px;}
 		.gridhome {
 			display: grid;
-			grid-template-columns: 1fr 1fr 2fr;
+			grid-template-columns: 1fr 2fr 1fr;
 			grid-template-areas:
-				". g ."
-				"d g e"
-				". g ." ;
+				"d e h"
+				"d g .";
 		}
 
 

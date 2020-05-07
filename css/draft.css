@@ -320,7 +320,7 @@ nav .search-container button:hover {
 	text-decoration: none;
 	background-color: #4d75c4;
 	padding: 10px;
-	border: 6px solid white;
+	border: 0.1px solid white;
 }
 
 .videowrapper {

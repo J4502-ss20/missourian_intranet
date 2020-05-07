@@ -319,7 +319,7 @@ nav .search-container button:hover {
 	color: white;
 	text-decoration: none;
 	background-color: #4d75c4;
-	padding: 10px;
+	padding: 9px;
 	border: 0.1px solid white;
 }
 
@@ -419,7 +419,7 @@ nav .search-container button:hover {
 /* DESKTOP STYLING */
 @media screen and (min-width:600px){
 	h1{
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 		margin-left: 15px;
 		text-align: left;
 	}
@@ -558,10 +558,9 @@ nav .search-container button:hover {
 
 	.gridmenu {
 		grid-area: a;
-		position: sticky;
-		top: 100px;
+		/*position: sticky;
+		top: 100px;*/
 		margin-left: 20px;
-		height:
 	}
 	.gridcontent {
 		grid-area: b;
@@ -695,7 +694,11 @@ nav .search-container button:hover {
 		margin: 0px;
 	}
 
-	iframe
+	.gridmenu {
+		position: sticky;
+		top: 100px;
+		margin-left: 20px;
+	}
 }
 
 @media screen and (min-width:1440px){

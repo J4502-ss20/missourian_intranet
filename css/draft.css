@@ -231,7 +231,7 @@ nav .search-container button:hover {
 
 
 .quick_links h2 {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .quick_links a:link, .quick_links a:visited {
@@ -292,6 +292,16 @@ nav .search-container button:hover {
 
 .homebasicinfo {
 	display: none;
+	background-color: #0066CC;
+	padding:10px;
+	position: sticky;
+	height:auto;
+	top:200px;
+}
+
+.homebasicinfo p {
+	color: white;
+	font-size: 1.1rem;
 }
 /*inside page menus*/
 
@@ -333,7 +343,7 @@ nav .search-container button:hover {
 	margin-bottom: 50px;
 }
 
-/*for the general resources page*/
+/*general_resources*/
 .general_resources {
 	margin-top: 110px;
 }
@@ -341,25 +351,23 @@ nav .search-container button:hover {
 .resourcesbutton {
 	display: flex;
 	flex-direction: column;
-  justify-content: center;
+	justify-content: center;
 	align-items: center;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	margin:20px 20px 0 0;
+	margin:10px 10px 0 20px;
 	float: none;
 }
 
 .resourcesbutton a:link, .resourcesbutton a:visited {
 	background: white;
-  color: black;
+	color: black;
 	padding: 8px 16px;
 	margin: 10px;
 	border: 3px solid black;
 	width:70%;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-	flex-direction: column;
+	text-align: center;
+	text-decoration: none;
 	font-weight:bolder;
 	box-sizing: border-box;
 }
@@ -370,12 +378,13 @@ nav .search-container button:hover {
 }
 
 .general_resources h2 {
-	margin: 20px 0 10px 0;
+	margin: 30px 0 8px 0;
 }
 
 .general_resources p {
-	padding:5px;
+	padding:5px 0 5px 20px;
 	margin: 0;
+	font-size: 1.2rem;
 }
 
 .general_resources a:link, .general_resources a:visited {
@@ -544,12 +553,6 @@ nav .search-container button:hover {
 		display: none;
 	}
 
-	.resourcesbutton {
-		flex-flow: column;
-		height: 10%;
-		float:left;
-	}
-
 	.gridmenu {grid-area: a;
 		position: sticky;
 		top: 80px;}
@@ -623,8 +626,26 @@ nav .search-container button:hover {
 				"d g .";
 		}
 
+		/*for the general resources page*/
+		.resourcesbutton {
+			grid-area: x;
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 
-}
+		.list {
+			grid-area:y;
+		}
+
+		.gridresources {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-areas:
+				"x y";
+		}
 
 @media screen and (min-width:1024px){
 
